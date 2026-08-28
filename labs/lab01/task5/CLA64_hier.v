@@ -32,6 +32,7 @@ module cla64_hier(
   input         cin,
   output [63:0] sum,
   output        cout
+  
 );
 
   // TODO: your hierarchical design goes here.
