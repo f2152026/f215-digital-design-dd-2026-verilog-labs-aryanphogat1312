@@ -1,5 +1,3 @@
-// rca64.v
-
 module rca64(
   input  [63:0] a,
   input  [63:0] b,
@@ -16,6 +14,7 @@ module rca64(
 
   generate
     for (i = 0; i < 64; i = i + 1) begin : gen_fa
+
       FA_Gate FA (
         .a(a[i]),
         .b(b[i]),
@@ -23,6 +22,7 @@ module rca64(
         .sum(sum[i]),
         .cout(c[i+1])
       );
+
     end
   endgenerate
 

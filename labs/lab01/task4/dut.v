@@ -1,5 +1,3 @@
-// dut.v
-
 module dut(
   input  [63:0] a,
   input  [63:0] b,
@@ -17,7 +15,7 @@ module dut(
     .cout(cout)
   );
 
-  // Option 2: flat CLA
+  // Option 2: flat 64-bit CLA
   // cla64_flat U_IMPL (
   //   .a(a),
   //   .b(b),
@@ -26,7 +24,7 @@ module dut(
   //   .cout(cout)
   // );
 
-  // Option 3: blocked CLA
+  // Option 3: blocked 64-bit CLA
   // cla64_blocked U_IMPL (
   //   .a(a),
   //   .b(b),

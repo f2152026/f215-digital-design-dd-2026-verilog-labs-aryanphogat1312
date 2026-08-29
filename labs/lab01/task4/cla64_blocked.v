@@ -1,5 +1,3 @@
-// cla64_blocked.v
-
 module cla64_blocked(
   input  [63:0] a,
   input  [63:0] b,
@@ -8,6 +6,7 @@ module cla64_blocked(
   output        cout
 );
 
+  // Carries between the 16 CLA blocks
   wire [15:1] c;
 
   cla4 CLA0 (
